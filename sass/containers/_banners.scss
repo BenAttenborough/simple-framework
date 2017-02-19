@@ -1,0 +1,43 @@
+.banner-main {
+  width: 100%;
+  height: 300px;
+  height: 100vh;
+  background-color: #000;
+  background: url('../img/background-trees.jpg');
+  background-size: cover;
+  background-position: center;
+  display: table;
+}
+
+.banner-text {
+  display: table-cell;
+  height: 100%;
+  vertical-align: bottom;
+  padding: 0 1rem;
+  @include desktop {
+    padding: 0 2rem;
+  }
+  h1,
+  h2 {
+    text-align: left;
+    color: white;
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    @include tablet-sm {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    @include desktop {
+      font-size: 7rem;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    @include tablet-sm {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
